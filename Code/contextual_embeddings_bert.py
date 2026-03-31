@@ -11,7 +11,7 @@ model.eval()
 
 # función para obtener los embeddings de un texto
 def get_token_embeddings(text, max_length=256):
-    tokens = tokenizer(text, return_tensors='pt', padding='True', truncation=True, max_length=max_length) #tokenizamos el text y lo convertimos a tensores de PyTorch
+    tokens = tokenizer(text, return_tensors='pt', padding=True, truncation=True, max_length=max_length) #tokenizamos el text y lo convertimos a tensores de PyTorch
 
     with torch.no_grad(): #no queremos calcular gradientes, solo obtener los embeddings
         outputs = model(**tokens) #obtenemos los outputs del modelo
