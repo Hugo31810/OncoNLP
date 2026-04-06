@@ -21,6 +21,8 @@ dependencies = [
     "en-core-web-sm",
     "tensorflow>=2.21.0",
     "tensorflow-hub>=0.16.1",
+    "gensim>=4.4.0",
+    "pip>=26.0.1",
 ]
 
 [tool.uv.sources]
