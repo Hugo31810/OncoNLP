@@ -3,3 +3,5 @@
 uv.lock
 Code/__pycache__/
 Models/
+Notebooks/Bonus_01_evaluation_phase.ipynb
+Results/output.csv
