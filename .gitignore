@@ -26,12 +26,7 @@ Notebooks/prueba.ipynb
 *.ckpt
 
 # Datos
-data/processed/
-datasets/
-models/
-outputs/
-results/
-checkpoints/
+Data/processed/
 
 # VS Code
 .vscode/
