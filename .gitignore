@@ -19,13 +19,7 @@ venv/
 *.pth
 *.ckpt
 
-# Datos
-data/
-datasets/
-models/
-outputs/
-results/
-checkpoints/
+
 
 # VS Code
 .vscode/
