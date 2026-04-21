@@ -1,10 +1,16 @@
 # Python
 __pycache__/
 *.pyc
+.python-version
 
 # Entornos
 venv/
 .env/
+.venv/
+
+# UV
+uv.lock
+Notebooks/prueba.ipynb
 
 # Jupyter
 .ipynb_checkpoints/
