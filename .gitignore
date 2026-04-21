@@ -1,6 +1,37 @@
-.venv/
-.python-version
-uv.lock
-Code/__pycache__/
-Models/
-Notebooks/prueba.ipynb
+# Python
+__pycache__/
+*.pyc
+
+# Entornos
+venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos y modelos pesados
+*.npy
+*.npz
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Datos
+data/
+datasets/
+models/
+outputs/
+results/
+checkpoints/
+
+# VS Code
+.vscode/
+
+# TensorFlow Hub cache
+tfhub_cache/
+
+.cache/
+tfhub_cache/
