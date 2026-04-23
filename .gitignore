@@ -25,9 +25,6 @@ Notebooks/prueba.ipynb
 *.pth
 *.ckpt
 
-# Datos
-Data/processed/
-
 # VS Code
 .vscode/
 
