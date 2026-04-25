@@ -10,7 +10,10 @@ venv/
 
 # UV
 uv.lock
+
+# Extras
 Notebooks/prueba.ipynb
+Models/
 
 # Jupyter
 .ipynb_checkpoints/
