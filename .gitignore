@@ -13,20 +13,10 @@ uv.lock
 
 # Extras
 Notebooks/prueba.ipynb
-Models/
+Models/biobert_3_512/
 
 # Jupyter
 .ipynb_checkpoints/
-
-# Datos y modelos pesados
-*.npy
-*.npz
-*.pkl
-*.joblib
-*.h5
-*.pt
-*.pth
-*.ckpt
 
 # VS Code
 .vscode/
