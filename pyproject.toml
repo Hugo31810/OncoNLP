@@ -27,6 +27,10 @@ dependencies = [
     "pip>=24.0",
     "datasets>=4.8.4",
     "torchvideo>=0.0.0",
+    "nlpaug>=1.1.11",
+    "nltk>=3.9.4",
+    "sacremoses>=0.1.1",
+    "tqdm>=4.67.3",
 ]
 
 [tool.uv.sources]
