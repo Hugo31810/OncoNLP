@@ -25,16 +25,25 @@ def vectorizacionEmbeddings(textos, modelo, metodo = 0):
     textos = textos.astype(str).tolist()
     matrix = []
     for texto in textos:
-        palabras = [w for w in texto.split() if w in modelo]
+        if hasattr(modelo, 'wv'):
+            palabras = [w for w in texto.split() if w in modelo.wv]
+        else:
+            palabras = [w for w in texto.split() if w in modelo]
 
         if palabras:
+
+            if hasattr(modelo, 'wv'):
+                vectores = modelo.wv[palabras]
+            else:
+                vectores = modelo[palabras]
+
             match metodo:
                 case 1:
-                    vector = np.sum(modelo[palabras], axis = 0)
+                    vector = np.sum(vectores, axis = 0)
                 case 2:
-                    vector = modelo[palabras]            
+                    vector = vectores            
                 case _:
-                    vector = np.mean(modelo[palabras], axis = 0)
+                    vector = np.mean(vectores, axis=0)
         
         matrix.append(vector)
 
