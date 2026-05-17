@@ -31,6 +31,7 @@ dependencies = [
     "nltk>=3.9.4",
     "sacremoses>=0.1.1",
     "tqdm>=4.67.3",
+    "setuptools>=82.0.1",
 ]
 
 [tool.uv.sources]
