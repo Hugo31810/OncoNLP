@@ -15,7 +15,7 @@ uv.lock
 Notebooks/prueba.ipynb
 Models/wiki.simple.bin
 Models/wiki.simple.vec
-Models/biobert_3_512/
+Models/longformer-prep_3_aug_len_1536
 
 # Jupyter
 .ipynb_checkpoints/
