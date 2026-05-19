@@ -22,6 +22,20 @@ def vectorizacionTfidf(textos, max_vocab = None):
     return matrix, vect
 
 def vectorizacionEmbeddings(textos, modelo, metodo = 0):
+    """Transforma una colección de textos en representaciones vectoriales numéricas 
+    (embeddings) utilizando un modelo de palabras (como Word2Vec, GloVe o FastText).
+
+    Args:
+        textos (pandas.Series o numpy.ndarray): Colección de textos a vectorizar (debe soportar .astype(str))
+        modelo (gensim.models, dict, o array-like): Modelo de word embeddings.
+        metodo (int, optional): Define la estrategia de agregación. Por defecto es 0.
+        - 0 (Caso base): Calcula el promedio (mean pooling).
+        - 1: Calcula la suma (sum pooling).
+        - 2: Sin agregación. Devuelve la secuencia completa de vectores.
+
+    Returns:
+        numpy.ndarray: array que contiene las representaciones vectoriales
+    """
     textos = textos.astype(str).tolist()
     matrix = []
     for texto in textos:
