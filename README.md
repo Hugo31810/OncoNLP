@@ -296,6 +296,7 @@ The project is organized as a reproducible experimental pipeline:
 ## 👨‍💻 Authors
 
 **Hugo Salvador Aizpún**
+
 **Tomás Cano Santa Catalina**
 
 *Natural Language Processing · Clinical AI · Biomedical Text Classification*
